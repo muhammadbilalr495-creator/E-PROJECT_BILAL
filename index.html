@@ -1,29 +1,557 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="navbar.css">
-</head>
-<body>
-     <HEADER>
-        <DIV class="LOGO"><A href="">FLEX_SHOP</A></DIV>
-        <BR>
-        <NAV>
-            <ul>
-                <li><A href="">HOME</A></li>
-            <li><A href="">ABOUT</A></li>
-            <li><A href="">PRODUCTS</A></li>
-           <li> <A href="">CONTACT</A></li>
-            <li><A href="">GALLERY</A></li>
-</ul>
-          
-
-        </NAV>
-        <BR>
-        <input type="TEXT" placeholder="SEARCH PRODUCTS">
-
-    </HEADER>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | Bakerz Bite</title>
+    <meta
+      name="description"
+      content="Bakerz Bite — freshly baked cakes, pastries, cookies and pies in Karachi."
+    />
+    <meta property="og:title" content="Home | Bakerz Bite" />
+    <meta
+      property="og:description"
+      content="Bakerz Bite — freshly baked cakes, pastries, cookies and pies in Karachi."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="index">
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="topbar">
+      <div class="container">
+        <a href="tel:+923001234567">☎ +92 300 1234567</a
+        ><span>Mon–Sun, 8:00 AM – 10:00 PM</span
+        ><a class="" href="offers.html">Today’s sweet deals →</a>
+      </div>
+    </div>
+    <header>
+      <div class="container header-row">
+        <a class="brand" href="index.html"
+          ><img
+            src="images/logo.png"
+            alt="Bakerz Bite logo"
+            width="60"
+            height="60"
+          /><span>Bakerz Bite<small>Artisan Bakery</small></span></a
+        ><button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Open navigation"
+        >
+          ☰
+        </button>
+        <nav id="main-nav" aria-label="Main navigation">
+          <a class="" href="index.html">Home</a
+          ><a class="" href="menu.html">Menu</a
+          ><a class="" href="merchandise.html">Merchandise</a
+          ><a class="" href="offers.html">Offers</a
+          ><a class="" href="about.html">About Us</a
+          ><a class="" href="faq.html">FAQ</a
+          ><a class="" href="contact.html">Contact Us</a
+          ><a class="" href="gallery.html">Gallery</a
+          ><a class="" href="feedback.html">Feedback</a>
+        </nav>
+        <a class="btn header-order" href="contact.html">Order Now →</a>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Baked fresh daily in Karachi</p>
+            <h1>Every bite, baked with <em>love.</em></h1>
+            <p>
+              Cakes, pastries, cookies and pies from the Bakerz Bite ovens to
+              your table — handmade with real butter and a lot of heart.
+            </p>
+            <div class="actions">
+              <a class="btn gold" href="menu.html">Explore the Menu →</a
+              ><a class="btn outline" href="offers.html">See Offers</a>
+            </div>
+            <dl class="stats">
+              <div>
+                <dt>Signature treats</dt>
+                <dd>16+</dd>
+              </div>
+              <div>
+                <dt>Customer rating</dt>
+                <dd>4.9★</dd>
+              </div>
+              <div>
+                <dt>Fresh from the oven</dt>
+                <dd>Daily</dd>
+              </div>
+            </dl>
+          </div>
+          <aside class="hero-extra">
+            <article class="hero-product">
+              <img src="images/cake.jpg" alt="Triple Chocolate Cake" />
+              <div>
+                <p class="eyebrow">Bestseller</p>
+                <h3>Triple Chocolate Cake</h3>
+                <p class="stars">★★★★★ <small>Loved by our regulars</small></p>
+              </div>
+            </article>
+            <a class="hero-deal" href="offers.html"
+              ><b>%</b
+              ><span
+                ><small>Today’s deal</small
+                ><strong>20% OFF · Weekend Cake Fest</strong></span
+              ></a
+            >
+          </aside>
+        </div>
+      </section>
+      <div class="marquee" aria-hidden="true">
+        <div>
+          Cakes ✦ Pastries ✦ Cookies ✦ Pies ✦ Baked fresh daily ✦ Custom orders
+          ✦ Eggless options ✦ Cakes ✦ Pastries ✦ Cookies ✦ Pies ✦ Baked fresh
+          daily ✦ Custom orders ✦ Eggless options ✦ Cakes ✦ Pastries ✦ Cookies ✦
+          Pies ✦ Baked fresh daily ✦ Custom orders ✦ Eggless options ✦ Cakes ✦
+          Pastries ✦ Cookies ✦ Pies ✦ Baked fresh daily ✦ Custom orders ✦
+          Eggless options ✦
+        </div>
+      </div>
+      <section class="container section">
+        <div class="section-heading">
+          <p class="eyebrow">Our sections</p>
+          <h2>Something for every craving</h2>
+          <p>
+            Four ovens, four passions. Pick a section to explore its full range.
+          </p>
+        </div>
+        <div class="categories">
+          <a class="category" href="menu.html?category=Cakes"
+            ><img src="images/cake.jpg" alt="Cakes" loading="lazy" /><span
+              class="tag"
+              >3 items</span
+            >
+            <div>
+              <p>Layered & celebratory</p>
+              <h3>Cakes <span>→</span></h3>
+            </div></a
+          ><a class="category" href="menu.html?category=Pastries"
+            ><img src="images/pastry.jpg" alt="Pastries" loading="lazy" /><span
+              class="tag"
+              >3 items</span
+            >
+            <div>
+              <p>Flaky & buttery</p>
+              <h3>Pastries <span>→</span></h3>
+            </div></a
+          ><a class="category" href="menu.html?category=Cookies"
+            ><img src="images/cookie.jpg" alt="Cookies" loading="lazy" /><span
+              class="tag"
+              >3 items</span
+            >
+            <div>
+              <p>Chewy & golden</p>
+              <h3>Cookies <span>→</span></h3>
+            </div></a
+          ><a class="category" href="menu.html?category=Pies"
+            ><img src="images/pie.jpg" alt="Pies" loading="lazy" /><span
+              class="tag"
+              >3 items</span
+            >
+            <div>
+              <p>Fruity & rustic</p>
+              <h3>Pies <span>→</span></h3>
+            </div></a
+          >
+        </div>
+      </section>
+      <section class="cream-band">
+        <div class="container features">
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true">♧</span>
+            <h3>Quality ingredients</h3>
+            <p>
+              Real butter, fine flour and Belgian-style chocolate in every bake.
+            </p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true">♡</span>
+            <h3>Handmade daily</h3>
+            <p>Everything is shaped by hand and baked fresh each morning.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true">↗</span>
+            <h3>Delivery in Karachi</h3>
+            <p>Free delivery on orders above Rs. 3,000 across the city.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true">☆</span>
+            <h3>Custom celebrations</h3>
+            <p>Birthday, wedding and party cakes designed just for you.</p>
+          </article>
+        </div>
+      </section>
+      <section class="dark-band">
+        <div class="container section split">
+          <div>
+            <div class="section-heading">
+              <p class="eyebrow">Inside our kitchen</p>
+              <h2>A little sweetness <em>in motion</em></h2>
+              <p>
+                Peek behind the counter as our bakers whip, pipe and decorate.
+                Every treat starts before sunrise and ends on your table.
+              </p>
+            </div>
+            <ul class="checklist">
+              <li>Small-batch baking, every morning</li>
+              <li>No shortcuts, no premixes</li>
+              <li>Decorated by hand</li>
+            </ul>
+          </div>
+          <video
+            controls
+            muted
+            playsinline
+            preload="metadata"
+            poster="images/hero.jpg"
+            aria-label="A baker preparing freshly baked cupcakes"
+          >
+            <source src="images/bakery.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+      <section class="container section">
+        <div class="center">
+          <div class="section-heading">
+            <p class="eyebrow">Customer favourites</p>
+            <h2>Our bestsellers</h2>
+            <p>The treats that sell out first.</p>
+          </div>
+        </div>
+        <div class="product-grid">
+          <article class="product" data-id="c1">
+            <button
+              class="product-open"
+              data-product="c1"
+              aria-label="View Triple Chocolate Cake"
+            >
+              <div class="product-image">
+                <img
+                  src="images/cake.jpg"
+                  alt="Triple Chocolate Cake"
+                  loading="lazy"
+                  width="816"
+                  height="816"
+                />
+                <div class="tags">
+                  <span class="tag">Chocolate</span
+                  ><span class="tag">Bestseller</span>
+                </div>
+                <span class="price">Rs. 2,800</span>
+              </div>
+              <div class="product-body">
+                <p class="eyebrow">Cakes</p>
+                <h3>Triple Chocolate Cake</h3>
+                <p>
+                  Three layers of moist cocoa sponge with silky dark ganache.
+                </p>
+              </div>
+            </button>
+          </article>
+          <article class="product" data-id="c2">
+            <button
+              class="product-open"
+              data-product="c2"
+              aria-label="View Red Velvet Cake"
+            >
+              <div class="product-image">
+                <img
+                  src="images/cake.jpg"
+                  alt="Red Velvet Cake"
+                  loading="lazy"
+                  width="816"
+                  height="816"
+                />
+                <div class="tags"><span class="tag">Bestseller</span></div>
+                <span class="price">Rs. 3,000</span>
+              </div>
+              <div class="product-body">
+                <p class="eyebrow">Cakes</p>
+                <h3>Red Velvet Cake</h3>
+                <p>
+                  Velvety crimson sponge layered with cream-cheese frosting.
+                </p>
+              </div>
+            </button>
+          </article>
+          <article class="product" data-id="p1">
+            <button
+              class="product-open"
+              data-product="p1"
+              aria-label="View Butter Croissant"
+            >
+              <div class="product-image">
+                <img
+                  src="images/pastry.jpg"
+                  alt="Butter Croissant"
+                  loading="lazy"
+                  width="816"
+                  height="816"
+                />
+                <div class="tags"><span class="tag">Bestseller</span></div>
+                <span class="price">Rs. 350</span>
+              </div>
+              <div class="product-body">
+                <p class="eyebrow">Pastries</p>
+                <h3>Butter Croissant</h3>
+                <p>
+                  Flaky, golden and laminated with 27 layers of French butter.
+                </p>
+              </div>
+            </button>
+          </article>
+          <article class="product" data-id="k1">
+            <button
+              class="product-open"
+              data-product="k1"
+              aria-label="View Chocolate Chip Cookies"
+            >
+              <div class="product-image">
+                <img
+                  src="images/cookie.jpg"
+                  alt="Chocolate Chip Cookies"
+                  loading="lazy"
+                  width="816"
+                  height="816"
+                />
+                <div class="tags">
+                  <span class="tag">Chocolate</span
+                  ><span class="tag">Bestseller</span>
+                </div>
+                <span class="price">Rs. 900</span>
+              </div>
+              <div class="product-body">
+                <p class="eyebrow">Cookies</p>
+                <h3>Chocolate Chip Cookies</h3>
+                <p>Chewy centres, crisp edges and plenty of chocolate chips.</p>
+              </div>
+            </button>
+          </article>
+          <article class="product" data-id="i1">
+            <button
+              class="product-open"
+              data-product="i1"
+              aria-label="View Classic Apple Pie"
+            >
+              <div class="product-image">
+                <img
+                  src="images/pie.jpg"
+                  alt="Classic Apple Pie"
+                  loading="lazy"
+                  width="816"
+                  height="816"
+                />
+                <div class="tags">
+                  <span class="tag">Bestseller</span
+                  ><span class="tag">Eggless</span>
+                </div>
+                <span class="price">Rs. 1,800</span>
+              </div>
+              <div class="product-body">
+                <p class="eyebrow">Pies</p>
+                <h3>Classic Apple Pie</h3>
+                <p>Lattice-topped pie with cinnamon-spiced apples.</p>
+              </div>
+            </button>
+          </article>
+          <article class="product" data-id="m2">
+            <button
+              class="product-open"
+              data-product="m2"
+              aria-label="View Bakerz Bite Tote Bag"
+            >
+              <div class="product-image">
+                <img
+                  src="images/merch.jpg"
+                  alt="Bakerz Bite Tote Bag"
+                  loading="lazy"
+                  width="816"
+                  height="816"
+                />
+                <div class="tags"><span class="tag">Bestseller</span></div>
+                <span class="price">Rs. 1,500</span>
+              </div>
+              <div class="product-body">
+                <p class="eyebrow">Merchandise</p>
+                <h3>Bakerz Bite Tote Bag</h3>
+                <p>Heavy canvas tote for your bakery runs.</p>
+              </div>
+            </button>
+          </article>
+        </div>
+      </section>
+      <section class="offer-band">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Today’s deal</p>
+            <p class="discount">20% OFF</p>
+            <h2>Weekend Cake Fest</h2>
+            <p>
+              All whole cakes every Saturday &amp; Sunday. Valid every weekend.
+            </p>
+            <div class="actions">
+              <a class="btn gold" href="offers.html">All offers →</a
+              ><span class="coupon">Code: <b>WEEKEND20</b></span>
+            </div>
+          </div>
+          <img
+            src="images/cake.jpg"
+            alt="Whole cake for the weekend offer"
+            loading="lazy"
+          />
+        </div>
+      </section>
+      <section class="container section">
+        <div class="center">
+          <div class="section-heading">
+            <p class="eyebrow">Kind words</p>
+            <h2>Loved across Karachi</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="three-grid">
+          <figure class="review">
+            <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote>
+              “Best red velvet in Karachi! The frosting is light and not too
+              sweet — our family orders it for every birthday.”
+            </blockquote>
+            <figcaption>
+              <b>Ayesha K.</b><span>Regular customer</span>
+            </figcaption>
+          </figure>
+          <figure class="review">
+            <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote>
+              “The croissants are super flaky, just like the ones in Paris. I
+              stop by every morning on my way to work.”
+            </blockquote>
+            <figcaption><b>Hamza R.</b><span>Coffee lover</span></figcaption>
+          </figure>
+          <figure class="review">
+            <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote>
+              “They made a three-tier cake for our client&#x27;s wedding.
+              Beautiful design and every guest asked where it came from.”
+            </blockquote>
+            <figcaption><b>Sana M.</b><span>Event planner</span></figcaption>
+          </figure>
+        </div>
+        <p class="center">
+          <a class="" href="feedback.html">Read all reviews or leave yours →</a>
+        </p>
+      </section>
+      <section class="container gallery-strip">
+        <a href="gallery.html"
+          ><img
+            src="images/pastry.jpg"
+            alt="Bakerz Bite pastry"
+            loading="lazy" /></a
+        ><a href="gallery.html"
+          ><img
+            src="images/cookie.jpg"
+            alt="Bakerz Bite cookie"
+            loading="lazy" /></a
+        ><a href="gallery.html"
+          ><img src="images/pie.jpg" alt="Bakerz Bite pie" loading="lazy" /></a
+        ><a href="gallery.html"
+          ><img src="images/merch.jpg" alt="Bakerz Bite merch" loading="lazy"
+        /></a>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <section class="newsletter">
+          <div>
+            <p class="eyebrow">Fresh from the oven</p>
+            <h2>Sweet news, straight to you.</h2>
+            <p>Seasonal treats, special offers and bakery news.</p>
+          </div>
+          <form id="newsletter">
+            <label for="newsletter-email" class="sr-only">Email address</label
+            ><input
+              id="newsletter-email"
+              type="email"
+              placeholder="Your email address"
+              required
+            /><button class="btn" type="submit">Subscribe →</button>
+            <p class="form-status" role="status"></p>
+          </form>
+        </section>
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="index.html"
+              ><img
+                src="images/logo.png"
+                alt="Bakerz Bite logo"
+                width="64"
+                height="64"
+              /><span>Bakerz Bite<small>Artisan Bakery</small></span></a
+            >
+            <p>
+              Freshly baked cakes, pastries, cookies and pies — made with love
+              in Karachi.
+            </p>
+          </div>
+          <nav aria-label="Footer">
+            <a class="" href="index.html">Home</a
+            ><a class="" href="menu.html">Menu</a
+            ><a class="" href="merchandise.html">Merchandise</a
+            ><a class="" href="offers.html">Offers</a
+            ><a class="" href="about.html">About Us</a
+            ><a class="" href="faq.html">FAQ</a
+            ><a class="" href="contact.html">Contact Us</a
+            ><a class="" href="gallery.html">Gallery</a
+            ><a class="" href="feedback.html">Feedback</a
+            ><a class="" href="sitemap.html">Sitemap</a>
+          </nav>
+          <address class="contact-list">
+            <a href="mailto:hello@bakerzbite.com"
+              ><span>Email</span><strong>hello@bakerzbite.com</strong></a
+            ><a href="tel:+923001234567"
+              ><span>Phone</span><strong>+92 300 1234567</strong></a
+            >
+            <p>
+              <span>Visit us</span
+              ><strong>12 Baker Street, Clifton, Karachi, Pakistan</strong>
+            </p>
+            <p>
+              <span>Opening hours</span
+              ><strong>Mon–Sun, 8:00 AM – 10:00 PM</strong>
+            </p>
+          </address>
+        </div>
+        <div class="copyright">
+          © 2026 Bakerz Bite. All rights reserved.
+          <span>Made with love &amp; butter.</span>
+        </div>
+      </div>
+    </footer>
+    <dialog id="product-dialog" aria-labelledby="product-title">
+      <button class="dialog-close" aria-label="Close product details">×</button>
+      <div id="product-detail"></div>
+    </dialog>
+    <dialog id="gallery-dialog" aria-label="Bakery photo viewer">
+      <button class="dialog-close" aria-label="Close gallery">×</button
+      ><img id="gallery-image" alt="" />
+      <div class="gallery-controls">
+        <button id="gallery-prev" aria-label="Previous photo">←</button>
+        <p id="gallery-caption"></p>
+        <button id="gallery-next" aria-label="Next photo">→</button>
+      </div>
+    </dialog>
+    <div id="toast" role="status"></div>
+  </body>
 </html>
+
